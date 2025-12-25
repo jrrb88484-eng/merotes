@@ -1,0 +1,14 @@
+{
+  "inbounds": [{
+    "port": 443,
+    "protocol": "trojan",
+    "settings": {
+      "clients": [{"password": "darktunnel"}]
+    },
+    "streamSettings": {
+      "network": "ws",
+      "wsSettings": {"path": "/"}
+    }
+  }],
+  "outbounds": [{"protocol": "freedom"}]
+}
