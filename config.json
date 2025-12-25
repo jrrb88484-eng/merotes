@@ -1,14 +1,27 @@
 {
-  "inbounds": [{
-    "port": 443,
-    "protocol": "trojan",
-    "settings": {
-      "clients": [{"password": "darktunnel"}]
-    },
-    "streamSettings": {
-      "network": "ws",
-      "wsSettings": {"path": "/"}
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [
+          {
+            "password": "darktunnel"
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "none",
+        "wsSettings": {
+          "path": "/"
+        }
+      }
     }
-  }],
-  "outbounds": [{"protocol": "freedom"}]
+  ],
+  "outbounds": [
+    {
+      "protocol": "freedom"
+    }
+  ]
 }
